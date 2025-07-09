@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () {
+document.addEventListener("DOMContentLoaded", () => {
   const opiniones = [
   {
     foto: "imagenesTF/fotoComentario.jpg",

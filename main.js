@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
     comentario: "Muy útil para estar al tanto de los incendios en mi zona."
   },
   {
-    foto: "imagenesTF/fotocomentario3.jpg",
+    foto: "imagenesTF/fotoComentario3.jpg",
     estrellas: "★★★☆☆",
     comentario: "El sistema funciona, pero me gustaría más personalización."
   }

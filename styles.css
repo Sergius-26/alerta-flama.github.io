@@ -5,6 +5,16 @@ body {
   box-sizing: border-box; /* Incluye padding y border en los tamaños */
   font-family: "Inria Serif", serif; /* Fuente base legible y moderna */
 }
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  margin-right: 1rem;
+}
 
 /* CABECERA Y MENÚ SUPERIOR */
 .top-header {
@@ -18,6 +28,7 @@ body {
   justify-content: space-between; /* Separación entre logo y menú */
   padding: 0 -0.5rem; /* Espacio horizontal interno del menú */
   border-bottom: 3px solid black;
+  font-family: "Righteous", cursive;
 }
 /* LOGO + TEXTO*/
 .logo {
@@ -82,8 +93,9 @@ body {
   text-align: right;
 }
 .Pantalla{
-  height: 100vh;
-  background-image: url('imagenesTF/menufondo.jpg');
+  height: 90vh;
+  width: auto;
+  background-image: url('imagenesTF/fondonuevoIHC.jpg');
   background-size: cover;
   background-position: center;
   display: flex;
@@ -95,8 +107,9 @@ body {
 
 .Pantalla-texto {
   max-width: 600px;
-  color: white;
-  margin-right: 20rem;
+  color: whitesmoke;
+  margin-right: 5rem;
+  padding-bottom: 4rem;
 }
 
 .Pantalla-texto p {
@@ -203,9 +216,9 @@ body {
 }
 
 .titulo-servicios {
-  font-size: 6rem;
+  font-size: 4rem;
   font-weight: bold;
-  margin-bottom: 10rem;
+  margin-bottom: 6rem;
   font-family: "Righteous", cursive;
   line-height: 1.2;
 }
@@ -342,7 +355,7 @@ body {
   background-color: black;
   min-height: 100vh;
   color: white;
-  padding: 2rem 4rem;
+  padding: 0.5rem 4rem;
   display: flex; 
   flex-direction: column; 
   justify-content: center; 
@@ -492,6 +505,7 @@ body {
 
 .registro-imagenes img {
   width: 100%;
+  height: auto;
   max-width: 400px;
   border-radius: 15px;
   object-fit: cover;
@@ -555,8 +569,6 @@ body {
   vertical-align: middle;
 }
 
-
-
 .contacto-form {
   flex: 1;
   display: flex;
@@ -592,8 +604,6 @@ body {
   cursor: pointer;
   width: fit-content;
 }
-
-
 
 /* RESPONSIVE: MÓVILES */
 @media (max-width: 768px) {
@@ -631,5 +641,141 @@ body {
 
   .historia-texto {
     font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .menu-horizontal {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #FFD600;
+    position: absolute;
+    top: 6.2rem;
+    left: 0;
+    z-index: 99;
+    border-top: 2px solid black;
+  }
+
+  .menu-horizontal.active {
+    display: flex;
+  }
+
+  .menu-horizontal li {
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+  }
+
+  .login-btn {
+    display: block;
+    text-align: center;
+    margin: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  /* SECCIÓN PANTALLA */
+  .Pantalla-texto {
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .Pantalla-texto p {
+    font-size: 2.5rem;
+  }
+
+  /* NOSOTROS */
+  .Nosotros {
+    height: auto;
+    padding: 3rem 1rem;
+  }
+
+  .Ncontenido {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Nimagenes .img-1,
+  .Nimagenes .img-2 {
+    width: 90%;
+    transform: none;
+  }
+
+  .Ntexto h2 {
+    font-size: 2rem;
+  }
+
+  .Ntexto p {
+    font-size: 1rem;
+  }
+
+  /* SERVICIOS */
+  .servicio-box {
+    width: 90%;
+  }
+
+  /* PLANES */
+  .plan-box {
+    width: 90%;
+  }
+
+  /* OPINIONES */
+  .opinion-contenido {
+    flex-direction: column;
+  }
+
+  .foto-cliente {
+    width: 200px;
+    height: 200px;
+  }
+
+  .comentario-cliente {
+    max-width: 100%;
+    min-width: 100%;
+  }
+
+  /* REGISTRO */
+  .registro-contenido {
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+  .registro-imagenes img {
+    max-width: 100%;
+  }
+
+  .fila {
+    flex-direction: column;
+  }
+
+  /* CONTACTO */
+  .contacto-contenido {
+    flex-direction: column;
+  }
+
+  .contacto-info {
+    text-align: center;
+  }
+
+  .contacto-social img {
+    width: 40px;
+    height: 40px;
+  }
+
+  /* GENERAL */
+  .titulo-servicios,
+  .titulo-planes,
+  .titulo-opiniones {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  section {
+    padding: 3rem 1rem;
   }
 }

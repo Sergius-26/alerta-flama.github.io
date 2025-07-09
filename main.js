@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
     estrellas: "★★★☆☆",
     comentario: "El sistema funciona, pero me gustaría más personalización."
   }
+  
 ];
 
 let indice = 0;
@@ -75,9 +76,9 @@ btn.addEventListener("click", () => {
   // btn.classList.toggle("open");
 });
 
-document.querySelector('.login-btn').onclick = () => {
+/*document.querySelector('.login-btn').onclick = () => {
   window.location.href = 'login.html';
-};
+};*/
 
 function solicitarServicio(nombreServicio) {
   alert(`Has solicitado el servicio de: ${nombreServicio}`);

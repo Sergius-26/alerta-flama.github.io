@@ -1,7 +1,7 @@
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", () {
   const opiniones = [
   {
-    foto: "imagenesTF/fotocomentario.jpg",
+    foto: "imagenesTF/fotoComentario.jpg",
     estrellas: "★★★★★",
     comentario: "Excelente servicio, las notificaciones llegaron justo a tiempo."
   },

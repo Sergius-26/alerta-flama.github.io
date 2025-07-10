@@ -84,3 +84,29 @@ function solicitarServicio(nombreServicio) {
   alert(`Has solicitado el servicio de: ${nombreServicio}`);
 }
 
+document.addEventListener("DOMContentLoaded", () => {
+  const secciones = document.querySelectorAll("section[id]");
+  const links = document.querySelectorAll(".menu-horizontal li a");
+
+  window.addEventListener("scroll", () => {
+    let current = "";
+
+    secciones.forEach(seccion => {
+      const top = window.scrollY;
+      const offset = seccion.offsetTop - 100;
+      const height = seccion.offsetHeight;
+      const id = seccion.getAttribute("id");
+
+      if (top >= offset && top < offset + height) {
+        current = id;
+      }
+    });
+
+    links.forEach(link => {
+      link.classList.remove("active");
+      if (link.getAttribute("href") === `#${current}`) {
+        link.classList.add("active");
+      }
+    });
+  });
+});

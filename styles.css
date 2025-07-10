@@ -1,9 +1,9 @@
 /* RESET BÁSICO */
 body {
-  margin: 0; /* Elimina el margen exterior del navegador */
-  padding: 0rem; /* Espaciado interno general */
-  box-sizing: border-box; /* Incluye padding y border en los tamaños */
-  font-family: "Inria Serif", serif; /* Fuente base legible y moderna */
+  margin: 0; 
+  padding: 0rem; 
+  box-sizing: border-box; 
+  font-family: "Inria Serif", serif; 
 }
 .menu-toggle {
   display: none;
@@ -18,15 +18,15 @@ body {
 
 /* CABECERA Y MENÚ SUPERIOR */
 .top-header {
-  position: fixed; /* Mantiene el menú fijo en la parte superior */
-  background-color: #FFD600; /* Fondo blanco para visibilidad */
-  width: 100%; /* Ocupa todo el ancho de la pantalla */
-  z-index: 100; /* Se asegura de estar por encima de otros elementos */
-  height: 6.2rem; /* Altura fija del menú (80px aprox.) */
-  display: flex; /* Activa Flexbox para alinear los elementos internos */
-  align-items: center; /* Centrado vertical */
-  justify-content: space-between; /* Separación entre logo y menú */
-  padding: 0 -0.5rem; /* Espacio horizontal interno del menú */
+  position: fixed; 
+  background-color: #FFD600; 
+  width: 100%; 
+  z-index: 100; 
+  height: 6.2rem; 
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between; 
+  padding: 0 -0.5rem; 
   border-bottom: 3px solid black;
   font-family: "Righteous", cursive;
 }
@@ -43,20 +43,24 @@ body {
   font-size: 1.2rem;
 }
 .logo img {
-  height: 6rem; /* Altura del logo */
-  width: auto; /* Mantiene proporción automática */
-  background-color: #FFD600; /* Fondo blanco para visibilidad */
+  height: 6rem;
+  width: auto;
+  background-color: #FFD600;
 }
 
 /* MENÚ PRINCIPAL HORIZONTAL */
 .menu-horizontal {
-  list-style: none; /* Quita los bullets */
-  display: flex; /* Muestra en fila horizontal */
-  /*justify-content: space-around; /* Espaciado uniforme entre elementos */
-  /*justify-content: flex-start;*/
+  list-style: none;
+  display: flex;
   margin: 0;
   padding: 0;
 }
+
+.menu-horizontal li a.active {
+  color: rgb(231, 3, 3) !important;
+  font-weight: bold;
+}
+
 /* BOTON DE INICIO DE SESION */
 .login-btn {
   display: inline-block;
